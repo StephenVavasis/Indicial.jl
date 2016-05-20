@@ -88,11 +88,11 @@ The Julia
 documentation apparently does not indicate the precedence of bitwise-not,
 but it appears to be quite high, which means that a usage like
 ```
-  @indicial y[~1] = x[~1 - 1]
+  @indicial y[~1] = x[~1 + 1]
 ```
 to shift a vector
 should work as intended, but if you want to be safe, you can write
 ```
-  @indicial y[~1] = x[(~1) - 1]
+  @indicial y[~1] = x[(~1) + 1]
 ```
 
